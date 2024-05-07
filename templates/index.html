@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Air Quality Map</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+<div id="mapid"></div>
+<script>
+createMap();
+getAirQualityData();
+</script>
+</body>
+</html>
+
